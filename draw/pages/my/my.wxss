@@ -1,0 +1,80 @@
+/* pages/my/my.wxss */
+
+page {
+  height: 100%;
+  /* width: 100%; */
+}
+
+.title {
+  text-align: center;
+  font-size: 45rpx;
+  height: 100rpx;
+  border-bottom: 2px rgba(0, 0, 0, 0.486) dotted;
+  padding-bottom: 15rpx;
+  padding-top: 5rpx;
+  color: rgba(0, 0, 0, 0.664);
+}
+
+.draw {
+  width: 100%;
+  font-size: 30rpx;
+  padding-left: 90rpx;
+  margin-top: 20rpx;
+}
+
+.date {
+  width: 100%;
+  border-bottom: 1px rgba(0, 0, 0, 0.486) solid;
+  font-size: 25rpx;
+  padding-left: 370rpx;
+  margin-bottom: 20rpx;
+}
+.box {
+  background-image: url(http://127.0.0.1:8080/images/my.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 100%; */
+  /* border:1px rgba(0, 0, 0, 0.486) solid; */
+}
+.draw-box{
+  border:1px rgba(0, 0, 0, 0.486) solid;
+  width: 80%;
+  overflow:hidden;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.185);
+  color: white;
+  margin-bottom: 50rpx;
+}
+.drawbox-box{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  /* height: 80%; */
+}
+.userInfo{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+image{
+  max-height: 100%;
+  max-width: 100%;
+  /* position: absolute; */
+}
+.img{
+   height: 60rpx;
+  width:60rpx;
+  margin-left: 200rpx;
+  border: 1px rgba(0, 0, 0, 0.185) double;
+}
+.nameInfo{
+  margin-left: 60rpx;
+  font-size: 35rpx;
+  color:rgba(0, 0, 0, 0.664);
+}
+.name{
+  color: rgba(3, 39, 241, 0.651);
+}

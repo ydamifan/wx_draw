@@ -1,0 +1,18 @@
+<!--pages/load/load.wxml-->
+<view wx:if="{{isHide}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562000557579&di=5b32cbd85763dd4bf2115a8b152cdd4f&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F16%2F08%2F04%2F1357a2d6c8f2a28.jpg"></image>
+    </view>
+
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+      授权登录
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>

@@ -1,0 +1,98 @@
+/* pages/draw/draw.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* border: 1px black solid; */
+  /* background-image: url(http://127.0.0.1:8080/images/p3.jpg); */
+  background-image: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2020850385,3377669253&fm=15&gp=0.jpg);
+}
+
+.jn {
+  width: 130rpx;
+  height: 130rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+}
+
+.jn-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.draw {
+  position: absolute;
+  top:0rpx;
+  width: 100%;
+  height: 70%;
+  /* background: rgba(0, 255, 149, 0.247); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  text-align: right;
+}
+.luckydog {
+  position: absolute;
+  bottom: 0rpx;
+  margin-top: 50rpx;
+  padding-top: 20rpx;
+  height: 30%;
+  width: 100%;
+  /* background: rgba(0, 102, 255, 0.247); */
+  text-align: center;
+  border-top: 2px rgba(0, 0, 0, 0.158) solid;
+}
+.draw-item{
+  text-align: center;
+}
+.jgg {
+  /* border: 1px black solid; */
+  width: 600rpx;
+  height: 600rpx;
+  background-image: url(http://127.0.0.1:8080/images/jgg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fangxing {
+  width: 460rpx;
+  height: 460rpx;
+  /* border: 1px black solid; */
+}
+
+.frame_row {
+  width: 460rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px rgb(0, 0, 0) solid; */
+}
+
+.frame_item {
+  width: 140rpx;
+  height: 140rpx;
+  /* border: 1px rgba(0, 0, 0, 0.616) solid; */
+}
+.nc{
+  color: blue;
+}
+.hb{
+  color: red;
+}
+image {
+  max-height: 100%;
+  max-width: 100%;
+}

@@ -1,0 +1,38 @@
+/* pages/rule/rule.wxss */
+
+page {
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+}
+.box {
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  background-image: url(http://127.0.0.1：8080/images/bg.png);
+}
+.rule {
+  width: 80%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.541);
+  border-radius: 15px;
+  color: white;
+  font-size: 30rpx;
+}
+.title{
+  font-size: 40rpx;
+  text-align: center;
+}
+.info{
+  margin-top: 20rpx;
+  padding-left: 15rpx;
+}
+.bottom{
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 25rpx;
+}

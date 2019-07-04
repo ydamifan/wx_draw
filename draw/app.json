@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/load/load",
+    "pages/draw/draw",
+    "pages/my/my",
+    "pages/rule/rule"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "幸运大抽奖",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath": "pages/draw/draw",
+        "text": "抽奖",
+        "iconPath":"images/draw1.png",
+        "selectedIconPath":"images/draw2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

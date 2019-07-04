@@ -1,0 +1,15 @@
+<!--pages/rule/rule.wxml-->
+<view class="box">
+  <view class="rule">
+    <view class="title">活动锦囊</view>
+    <view class="info">活动时间：</view>
+    <view class="info">本活动自2019年6月26日起，至2019年7月5日结束，兑奖截止日期至2019年9月1日。 </view>
+    <view class="info">活动规则：</view>
+    <view class="info">用户点击抽奖按钮，最终九宫格停止界面即为用户所中奖品，用户需在指定时间内兑换奖品，过期无效。</view>
+    <view class="info">奖品设置：</view>
+    <view class="info" wx:for="{{drawsInfo}}">
+      {{item.level}}:{{item.name}},共设置{{item.sumNumber}}份，中奖率约为{{item.probability*100}}%
+    </view>
+    <view class="bottom">本活动最终解释权归yda米凡小程序所有</view>
+  </view>
+</view>

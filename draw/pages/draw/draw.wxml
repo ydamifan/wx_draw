@@ -1,0 +1,67 @@
+<!--pages/draw/draw.wxml-->
+<view class="container">
+  <view class="draw">
+    <view class="jn">
+      <image bind:tap="gotoInfo" class="jn-img" src="/images/jn.png"></image>
+    </view>
+    <view class="jgg">
+      <view class="fangxing">
+        <view class='frame_row'>
+          <view class="frame_item">
+            <image style='opacity:{{color[0]}}' src="{{images[0]}}"></image>
+          </view>
+          <view class="frame_item">
+            <image style='opacity:{{color[1]}}' src="{{images[1]}}"></image>
+          </view>
+          <view class="frame_item">
+            <image style='opacity:{{color[2]}}' src="{{images[2]}}"></image>
+          </view>
+        </view>
+        <view class='frame_row'>
+          <view class="frame_item">
+            <image style='opacity:{{color[7]}}' src="{{images[3]}}"></image>
+          </view>
+          <view class="frame_item">
+            <image bind:tap="{{clickLuck}}" src="{{images[4]}}"></image>
+          </view>
+          <view class="frame_item">
+            <image style='opacity:{{color[3]}}' src="{{images[5]}}"></image>
+          </view>
+        </view>
+        <view class='frame_row'>
+          <view class="frame_item">
+            <image style='opacity:{{color[6]}}' src="{{images[6]}}"></image>
+          </view>
+          <view class="frame_item">
+            <image style='opacity:{{color[5]}}' src="{{images[7]}}"></image>
+          </view>
+          <view class="frame_item">
+            <image style='opacity:{{color[4]}}' src="{{images[8]}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- <view class="luckydog">
+    <view wx:for="{{userDraws}}" class="draw-item">
+      恭喜<text class="nc">{{item.username}}</text>抽中了<text class="hb">{{item.d.name}}</text>
+    </view>
+  </view>
+</view> -->
+
+  <view class="luckydog">
+    <swiper autoplay="true" display-multiple-items="4" vertical="true" circular="true" interval="3000">
+      <view class="draw-item">
+        <block wx:for="{{userDraws}}">
+          <swiper-item>
+            恭喜
+            <text class="nc">{{item.username}}</text>抽中了
+            <text class="hb">{{item.d.name}}</text>
+          </swiper-item>
+        </block>
+      </view>
+    </swiper>
+  </view>
+</view>

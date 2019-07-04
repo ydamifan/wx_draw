@@ -1,0 +1,18 @@
+<!--pages/my/my.wxml-->
+<view class="box" style='height:{{windowHeight}}rpx'>
+  <view class="title">中奖信息</view>
+  <view class="userInfo">
+    <view class="img">
+      <image src='{{avatar}}'></image>
+    </view>
+    <text class="nameInfo">昵称：<text class="name">{{name}}</text></text>
+  </view>
+  <view class="drawbox-box" style='height:{{windowHeight-200}}rpx'>
+    <view class="draw-box">
+      <block wx:for="{{draws}}" wx:if="{{item.level!='未中奖'}}">
+        <view class="draw">{{item.level}}:{{item.name}}</view>
+        <view class='date'>{{item.date}}</view>
+      </block>
+    </view>
+  </view>
+</view>
